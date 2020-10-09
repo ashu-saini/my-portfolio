@@ -1,0 +1,32 @@
+.experiene-box {
+    border-left: 3px solid #00BCD4;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+
+    .item {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .designation {
+        position: absolute;
+        left: -280px;
+        top: 0;
+    }
+
+    .info {
+        margin-top: 0;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .place {
+        position: absolute;
+        right: 0;
+        top: 2px; 
+    }
+
+}
