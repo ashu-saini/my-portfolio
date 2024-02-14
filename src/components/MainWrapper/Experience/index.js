@@ -1,28 +1,29 @@
+import { Box, Typography } from "@mui/material";
 import React from "react"
-import Section from "../Section"
+import Section from "components/MainWrapper/Section"
 import { experiences } from "./constant";
 import './experience.scss'
 
 const Experiences = () => {
   return (
       <Section className="experience" title="Work Experience">
-        <div className="experiene-box">
+        <Box className="experiene-box">
           {experiences.map( (experience) => (
-            <div className="item">
-              <div className="info">
-              <h3>{experience.companyName}</h3>
-              <span className="place">{experience.location}</span>
-              </div>
-              <div className="designation">
-                <div>{experience.designation}</div>
-                <div>{experience.duration}</div>
-              </div>
-              <div>
-              <p>{experience.jobDesc}</p>
-              </div>
-            </div>
+            <Box className="item">
+              <Box className="info">
+              <Typography variant="h3">{experience.companyName}</Typography>
+              <Typography className="place">{experience.location}</Typography>
+              </Box>
+              <Box className="designation">
+                <Box>{experience.designation}</Box>
+                <Box>{experience.duration}</Box>
+              </Box>
+              <Box>
+              <Typography variant="p">{experience.jobDesc}</Typography>
+              </Box>
+            </Box>
           ))}
-        </div>
+        </Box>
       </Section>
   )
 }

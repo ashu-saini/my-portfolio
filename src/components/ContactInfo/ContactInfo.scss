@@ -1,0 +1,12 @@
+
+
+.contact-info-wraper {
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .contact-links {
+        display: flex;
+        gap: 4rem;
+    }
+}

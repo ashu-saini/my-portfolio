@@ -1,26 +1,27 @@
 import React from "react"
-import Section from "../Section"
+import Section from "components/MainWrapper/Section"
 import ImageUrl from "../../../assets/profile.jpg"
 import { info } from './constant'
-import Button from '../../@system/Button'
+import Button from 'components/@system/Button'
 import './contact.scss'
+import { Box, Typography } from "@mui/material"
 
 const Contact = () => {
   const src = `mailto:${info.email}`
-  const tel = `tel:${info.tel}`
+  const tel = `tel:${info.phone}`
   return (
       <Section className="contact" title="Get in Touch">
-        <div className="contact-wrapper">
-          <div>
+        <Box className="contact-wrapper">
+          <Box>
             <img className="img" src={ImageUrl} alt={info.alt} />
-          </div>
-          <h3>{info.title}</h3>
-          <p className="info">
+          </Box>
+          <Typography variant="h3">{info.title}</Typography>
+          <Typography className="info">
             Looking for an experienced full-stack developer to build your web app or ship your software product? To start
             an initial chat, just drop me an email at <a href={src}>{info.email}</a> or call me at <a href={tel}>{info.phone}</a>
-          </p>
-          <Button name="Let's Talk" href={src}/>
-        </div>
+          </Typography>
+          <Button href={src}>Let's Talk</Button>
+        </Box>
       </Section>
   )
 }

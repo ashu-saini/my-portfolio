@@ -1,27 +1,26 @@
 import React from "react"
-import Section from "../Section"
+import Section from "components/MainWrapper/Section"
 import { projects } from './constant'
+import { Box, Typography } from "@mui/material"
 
 const Projects = () => {
   return (
-    <div>
       <Section className="projects" title="Projects">
-        <div>
+        <Box>
           {projects.map( (project, index) => (
-            <div>
-              <h1>{project.title}</h1>
-              <p>{project.desc}</p>
+            <Box>
+              <Typography variant="h1">{project.title}</Typography>
+              <Typography variant="p">{project.desc}</Typography>
               <a href={project.url} target="_blank" rel="noopener noreferrer">View on Github</a>
-              <div>
+              <Box>
                 {project.key.map((key) => (
-                  <span>{key}</span>
+                  <Typography>{key}</Typography>
                 ))}
-              </div>
-            </div>
+              </Box>
+            </Box>
           ))}
-        </div>
+        </Box>
       </Section>
-    </div>
   )
 }
 

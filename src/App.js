@@ -1,17 +1,18 @@
 import React from "react"
 import "./App.css"
-import ThemeContainer from "./Theme"
-import TopBar from "./components/TopBar"
-import Intro from "./components/Intro"
-import ContactInfo from "./components/ContactInfo"
-import MainWrapper from "./components/MainWrapper"
+import { Box } from "@mui/material"
+import Header from "components/Header"
+import Intro from "components/Intro"
+import MainWrapper from "components/MainWrapper"
+import ThemeContainer from "Theme"
 
 function App() {
   return (
     <ThemeContainer>
-      <TopBar />
-      <Intro />
-      <ContactInfo />
+      <Box>
+        <Header />
+      </Box>
+      <Box><Intro /></Box>
       <MainWrapper />
     </ThemeContainer>
   )

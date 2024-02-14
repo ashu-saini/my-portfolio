@@ -1,32 +1,31 @@
 import React from "react"
-import Section from "../Section"
+import Section from "components/MainWrapper/Section"
 import { skills, skillTitle } from "./constant";
 import './skills.scss'
+import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 
 const Skills = () => {
   return (
       <Section className="skills" title="Skills Overview">
-        <div>
-          <p className="skill-title">
-              {skillTitle}
-          </p>
-          <div>
+        <Box>
+          <Typography className="skill-title" variant="p">{skillTitle}</Typography>
+          <Box>
             {skills.map( (skill) => (
-              <div>
-              <div>
+              <Box>
+              <Box>
                 <img src="addd"/>
-              </div>
-              <ul>
+              </Box>
+              <List>
                 {skill.key.map((key) => (
-                  <li>
+                  <ListItem>
                     {key}
-                  </li>
+                  </ListItem>
                 ))}
-              </ul>
-              </div>
+              </List>
+              </Box>
             ))}
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Section>
   )
 }

@@ -1,32 +1,36 @@
 import React from "react"
-import Experiences from "./Experience"
-import Skills from "./Skills"
-import Projects from "./Projects";
-import Contact from "./Contact"
+import { makeStyles } from "@mui/styles";
+import { Box } from "@mui/material";
+import Container from 'components/Container'
+import Experiences  from 'components/MainWrapper/Experience'
+import Skills  from 'components/MainWrapper/Skills'
+import Projects  from 'components/MainWrapper/Projects'
+import Contact  from 'components/MainWrapper/Contact'
 
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles( (theme) => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     width: '100%',
-    paddingRight: '1rem',
-    paddingLeft: '1rem',
-    marginRight: 'auto',
     paddingTop: '60px',
     paddingBottom: '60px',
-    marginLeft: 'auto'
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '2rem'
   }
 }))
 
 function MainWrapper() {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
-      <Experiences />
-      <Skills/>
-      <Projects />
-      <Contact />
-    </div>
+    <Container>
+      <Box className={classes.container}>
+        <Experiences />
+        <Skills />
+        <Projects />
+        <Contact />
+      </Box>
+    </Container>
   )
 }
 
