@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f9a031b.chunk.css",
-    "main.js": "/static/js/main.85984d72.chunk.js",
-    "main.js.map": "/static/js/main.85984d72.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.06e93911.js",
-    "runtime-main.js.map": "/static/js/runtime-main.06e93911.js.map",
-    "static/js/2.a89da906.chunk.js": "/static/js/2.a89da906.chunk.js",
-    "static/js/2.a89da906.chunk.js.map": "/static/js/2.a89da906.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2be87711bf709719b5ea10b68f6f16ef.js": "/precache-manifest.2be87711bf709719b5ea10b68f6f16ef.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.9f9a031b.chunk.css.map": "/static/css/main.9f9a031b.chunk.css.map",
-    "static/js/2.a89da906.chunk.js.LICENSE.txt": "/static/js/2.a89da906.chunk.js.LICENSE.txt",
-    "static/media/linkedIn.81aa65e3.svg": "/static/media/linkedIn.81aa65e3.svg",
-    "static/media/profile.jpg": "/static/media/profile.ec147753.jpg",
-    "static/media/skype.c8b715be.svg": "/static/media/skype.c8b715be.svg"
+    "main.css": "/my-portfolio/static/css/main.9f9a031b.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.c78e4322.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.c78e4322.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.cc7e5888.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.cc7e5888.js.map",
+    "static/js/2.a89da906.chunk.js": "/my-portfolio/static/js/2.a89da906.chunk.js",
+    "static/js/2.a89da906.chunk.js.map": "/my-portfolio/static/js/2.a89da906.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.a4eba4531a97c222e7d51d20ee522b09.js": "/my-portfolio/precache-manifest.a4eba4531a97c222e7d51d20ee522b09.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/main.9f9a031b.chunk.css.map": "/my-portfolio/static/css/main.9f9a031b.chunk.css.map",
+    "static/js/2.a89da906.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.a89da906.chunk.js.LICENSE.txt",
+    "static/media/linkedIn.81aa65e3.svg": "/my-portfolio/static/media/linkedIn.81aa65e3.svg",
+    "static/media/profile.jpg": "/my-portfolio/static/media/profile.ec147753.jpg",
+    "static/media/skype.c8b715be.svg": "/my-portfolio/static/media/skype.c8b715be.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.06e93911.js",
+    "static/js/runtime-main.cc7e5888.js",
     "static/js/2.a89da906.chunk.js",
     "static/css/main.9f9a031b.chunk.css",
-    "static/js/main.85984d72.chunk.js"
+    "static/js/main.c78e4322.chunk.js"
   ]
 }
