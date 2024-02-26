@@ -6,9 +6,9 @@ import './intro.scss'
 function Intro() {
   return (
     <Box className="intro-wrapper">
-      <Box>
-        <Typography variant="h1">Hey, I’m Shamko</Typography>
-        <Typography variant="h4">Freelance Creative & Professional
+      <Box className="intro__text">
+        <Typography className="intro--name" variant="h1">Hey, I’m Shamko</Typography>
+        <Typography className="profession" variant="h4">Freelance Creative & Professional
         <br/>
         Graphics Designer
         </Typography>

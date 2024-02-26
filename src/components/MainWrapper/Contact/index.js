@@ -15,7 +15,7 @@ const Contact = () => {
           <Box>
             <img className="img" src={ImageUrl} alt={info.alt} />
           </Box>
-          <Typography variant="h3">{info.title}</Typography>
+          <Typography className="contact--title" variant="h3">{info.title}</Typography>
           <Typography className="info">
             Looking for an experienced full-stack developer to build your web app or ship your software product? To start
             an initial chat, just drop me an email at <a href={src}>{info.email}</a> or call me at <a href={tel}>{info.phone}</a>

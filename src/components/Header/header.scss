@@ -33,10 +33,34 @@
 
     li {
         display: inline-block;
+    }
+    li:not(:first-child) {
         margin-left: 30px;
     }
 
     .links-wrapper {
         display: flex;
+    }
+}
+
+@media only screen and (max-width: 545px){
+	/*Small smartphones [325px -> 425px]*/
+    .header {
+        li:not(:first-child) {
+            margin-left: 5px !important;
+        }
+    }
+}
+@media only screen and (max-width: 440px){
+	/*Small smartphones [325px -> 425px]*/
+    .header {
+        .social {
+            margin-left: auto;
+        }
+        li {
+            margin: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
     }
 }

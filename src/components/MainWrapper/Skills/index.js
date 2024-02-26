@@ -9,13 +9,15 @@ const Skills = () => {
       <Section className="skills" title="Skills Overview">
         <Box>
           <Typography className="skill-title" variant="p">{skillTitle}</Typography>
-          <Box>
+          <Box className="skills__container">
             {skills.map( (skill) => (
+              
               <Box>
-              <Box>
-                <img src="addd"/>
+              <Box className="skills__wrapper">
+                <img className="skills__Icons" src={skill.icon}/>
+                <Typography className="skills__heading-text">{skill.title}</Typography>
               </Box>
-              <List>
+              <List className="skills__items">
                 {skill.key.map((key) => (
                   <ListItem>
                     {key}
