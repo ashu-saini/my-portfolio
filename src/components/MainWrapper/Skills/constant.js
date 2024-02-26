@@ -1,15 +1,18 @@
+import UiImg from '../../../assets/designer.png'
+import BackendImg from '../../../assets/web-development.png'
+import ToolsImg from '../../../assets/technical-support.png'
 export const skills = [
-    {
+    {   icon: UiImg,
         title: 'Frontend',
         key: ['React/React Hooks/Context API', 'Javascript', 'Typescript', 'Webpack', 'HTML/CSS/SASS']
 
     },
-    {
+    {   icon: BackendImg,
         title: 'Backend',
         key: ['Node.js/Express', 'PHP', 'PostgresSQL/MySQL', 'MongoDB']
     },
-    {
-        title: 'Others',
+    {   icon: ToolsImg,
+        title: 'Tools',
         key: ['AWS', 'S3 Bucket', 'Agora RTC SDK', 'Agora RTM SDK', 'Pubnub Chat SDK']
     }
 ]

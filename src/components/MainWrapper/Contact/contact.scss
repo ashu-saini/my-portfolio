@@ -9,8 +9,16 @@
     }
 
     .info {
-        width: 780px;
         margin-left: auto;
         margin-right: auto;
+        min-width: auto;
+        max-width: 780px;
     }
 }
+
+@media only screen and (max-width: 440px){
+    .contact--title {
+        font-size: 2.5rem !important;
+        margin-bottom: 15px !important;
+    }
+    }

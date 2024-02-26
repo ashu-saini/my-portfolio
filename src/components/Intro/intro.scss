@@ -1,6 +1,17 @@
 .intro-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
     padding: 30px;
+}
+.intro__text {
+    max-width: 656px !important;
+}
+@media only screen and (max-width: 540px){
+.intro--name {
+    font-size: 2rem !important;
+}
+.profession {
+    font-size: 1.4rem !important;
+}
 }

@@ -11,7 +11,7 @@ const Experiences = () => {
           {experiences.map( (experience) => (
             <Box className="item">
               <Box className="info">
-              <Typography variant="h3">{experience.companyName}</Typography>
+              <Typography variant="h3" className="company--name">{experience.companyName}</Typography>
               <Typography className="place">{experience.location}</Typography>
               </Box>
               <Box className="designation">

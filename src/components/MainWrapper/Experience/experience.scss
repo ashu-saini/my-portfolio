@@ -30,3 +30,34 @@
     }
 
 }
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [751px -> 1200px]*/
+    .experiene-box {
+        margin-left: 180px;
+    }
+    .designation {left: -200px !important;}
+}
+@media only screen and (max-width: 750px){
+	/*Big smartphones [426px -> 750px]*/
+    .experiene-box {
+        margin-left: 140px;
+    }
+    // .designation {left: -200px !important;}
+    .place {
+        position: static !important;
+    }
+}
+@media only screen and (max-width: 540px){
+	/*Big smartphones [426px -> 750px]*/
+    .company--name {
+        font-size: 28px !important;
+    }
+    .designation {
+        font-size: 14px !important;
+        left: -158px !important;
+    }
+    .experiene-box {
+        margin-left: 90px;
+    }
+}
