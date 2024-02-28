@@ -12,7 +12,7 @@ const Skills = () => {
           <Box className="skills__container">
             {skills.map( (skill) => (
               
-              <Box>
+              <Box className="skills__cards">
               <Box className="skills__wrapper">
                 <img className="skills__Icons" src={skill.icon}/>
                 <Typography className="skills__heading-text">{skill.title}</Typography>

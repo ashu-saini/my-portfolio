@@ -5,11 +5,28 @@
     padding: 30px;
 }
 .intro__text {
-    max-width: 656px !important;
+    display: flex;
+    &--wrapper {
+        max-width: 656px !important;
+
+    }
+    &--btn {
+        margin-left: auto !important;
+        width: 200px;
+        height: 45px;
+        align-self: flex-end;
+    }
 }
 @media only screen and (max-width: 540px){
 .intro--name {
     font-size: 2rem !important;
+}
+.intro__text {
+    flex-direction: column;
+    gap: 15px;
+    &--btn {
+        width: 100%;
+    }
 }
 .profession {
     font-size: 1.4rem !important;

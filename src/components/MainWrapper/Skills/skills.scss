@@ -29,3 +29,20 @@
     }
 
 }
+
+@media only screen and (min-width: 1150px){
+    /*Tablets [751px -> 1200px]*/
+    .skills {
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        &__cards {
+            flex: 1;
+        }
+        &__items {
+            height: 80%;
+        }
+    }
+}
