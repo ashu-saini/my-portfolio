@@ -4,16 +4,16 @@ import ToolsImg from '../../../assets/technical-support.png'
 export const skills = [
     {   icon: UiImg,
         title: 'Frontend',
-        key: ['React/React Hooks/Context API', 'Javascript', 'Typescript', 'Webpack', 'HTML/CSS/SASS']
+        key: ['React/Redux/React Hooks/Context API', 'Angular', 'Javascript', 'Typescript', 'Webpack', 'HTML/CSS/SASS']
 
     },
     {   icon: BackendImg,
         title: 'Backend',
-        key: ['Node.js/Express', 'PHP', 'PostgresSQL/MySQL', 'MongoDB']
+        key: ['Node.js/Express', 'PostgresSQL/MySQL', 'MongoDB']
     },
     {   icon: ToolsImg,
         title: 'Tools',
-        key: ['AWS', 'S3 Bucket', 'Agora RTC SDK', 'Agora RTM SDK', 'Pubnub Chat SDK']
+        key: ['AWS', 'Docker', 'WebRTC', 'RTC SDK', 'Chat SDK']
     }
 ]
 

@@ -17,10 +17,10 @@ const Contact = () => {
           </Box>
           <Typography className="contact--title" variant="h3">{info.title}</Typography>
           <Typography className="info">
-            Looking for an experienced full-stack developer to build your web app or ship your software product? To start
+            Looking for an experienced full-stack developer to build your web application? To start
             an initial chat, just drop me an email at <a href={src}>{info.email}</a> or call me at <a href={tel}>{info.phone}</a>
           </Typography>
-          <Button href={src}>Let's Talk</Button>
+          <Button href={src}>Download Resume</Button>
         </Box>
       </Section>
   )

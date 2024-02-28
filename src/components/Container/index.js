@@ -4,7 +4,7 @@ import './index.scss'
 
 const Conatiner = (props) => {
   return (
-   <div class='conatiner'>
+   <div className='conatiner'>
        {props.children}
    </div>
   )

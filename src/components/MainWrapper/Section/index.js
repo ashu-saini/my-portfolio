@@ -1,7 +1,7 @@
 import React from "react"
 
 import { makeStyles } from "@mui/styles";
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
 const useStyles = makeStyles( (theme) => ({
   section: {
@@ -12,10 +12,9 @@ const useStyles = makeStyles( (theme) => ({
     width: '80%'
   },
   title: {
-    marginTop: '0px',
-    marginBottom: '45px',
-    fontSize: '24px',
-    textAlign: 'center'
+    marginBottom: '45px !important',
+    textAlign: 'center',
+    fontWeight: '600 !important'
   }
 }))
 
@@ -23,7 +22,7 @@ const Section = (props) => {
   const classes = useStyles(makeStyles)
   return (
       <Paper className={`${props.className} ${classes.section}`}>
-        <h2 className={classes.title}>{props.title}</h2>
+        <Typography variant="h4" className={classes.title} >{props.title}</Typography>
         {props.children}
       </Paper>
   )

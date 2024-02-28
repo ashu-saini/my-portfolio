@@ -1,19 +1,14 @@
 import React from "react"
-import { createTheme,  ThemeProvider } from "@mui/material"
+import { createTheme,  ThemeProvider, responsiveFontSizes } from "@mui/material/styles"
 import CssBaseline from "@mui/material/CssBaseline"
 
-const Theme = createTheme({
+let Theme = createTheme({
   typography: {
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif',
-    fontSize: 14,
+    fontSize: 12,
+    fontFamily: 'Poppins, sans-serif',
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
-  },
-
-  primary: {
-    main: '#ff5722', // Set your desired primary color here
   },
 
   palette: {
@@ -23,15 +18,18 @@ const Theme = createTheme({
       paper: "#302e3d",
     },
     text:{
-      primary: "#FFFFFF"
-    }
+      primary: "#F1E7E6"
+    },
+    primary: {
+      main: '#5D5CCB', // Set your desired primary color here
+    },
   },
 })
 
+Theme = responsiveFontSizes(Theme);
+
 const Theme1 = createTheme({
   typography: {
-    fontFamily:
-      '-apple-system, BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", sans-serif',
     fontSize: 14,
     fontWeightLight: 400,
     fontWeightRegular: 500,
