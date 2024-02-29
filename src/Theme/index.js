@@ -4,7 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline"
 
 let Theme = createTheme({
   typography: {
-    fontSize: 12,
+    fontSize: 16,
     fontFamily: 'Poppins, sans-serif',
     fontWeightLight: 400,
     fontWeightRegular: 500,
@@ -15,7 +15,7 @@ let Theme = createTheme({
     type : 'dark',
     background: {
       default: "#191628",
-      paper: "#302e3d",
+      paper: "#211D34",
     },
     text:{
       primary: "#F1E7E6"

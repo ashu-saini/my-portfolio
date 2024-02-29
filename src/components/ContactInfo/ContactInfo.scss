@@ -9,6 +9,9 @@
         display: flex;
         gap: 1rem;
     }
+    .link-gap {
+        gap: 5px;
+    }
 }
 @media only screen and (max-width: 750px){
 	/*Big smartphones [426px -> 750px]*/

@@ -14,14 +14,14 @@ const Experiences = () => {
             <Box className="item">
               <Box className="info">
               <Typography variant="h3" className="company--name">{experience.companyName}</Typography>
-              <Typography className="place">
+              <Box className="place">
                 <LocationOnIcon></LocationOnIcon>
                 {experience.location}
-              </Typography>
+              </Box>
               </Box>
               <Box className="designation">
                 <Box>{experience.designation}</Box>
-                <Box>
+                <Box className="duration-wrapper">
                   <CalendarMonthIcon></CalendarMonthIcon>
                   {experience.duration}
                 </Box>

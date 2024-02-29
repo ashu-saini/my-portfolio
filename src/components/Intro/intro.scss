@@ -8,16 +8,42 @@
     }
 }
 .intro__text {
-    max-width: 656px !important;
+    display: flex;
+    &--wrapper {
+        max-width: 656px !important;
+
+    }
+    &--btn {
+        margin-left: auto !important;
+        width: 30%;
+        height: 50px;
+        align-self: flex-end;
+    }
 }
 
 .intro--name {
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 } 
 
-@media only screen and (max-width: 540px){
+@media only screen and (min-width: 681px) and (max-width: 1080px) {
+    .intro__text {
+        gap: 15px;
+        &--btn {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px){
 .intro--name {
     font-size: 2rem !important;
+}
+.intro__text {
+    flex-direction: column;
+    gap: 15px;
+    &--btn {
+        width: 100%;
+    }
 }
 .profession {
     font-size: 1.4rem !important;

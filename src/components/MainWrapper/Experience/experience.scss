@@ -59,6 +59,13 @@
         position: absolute;
         right: 0;
         top: 2px; 
+        display: flex;
+        gap: 5px;
+    }
+
+    .duration-wrapper {
+        display: flex;
+        gap: 5px;
     }
 
 }
@@ -78,6 +85,12 @@
     // .designation {left: -200px !important;}
     .place {
         position: static !important;
+    }
+    .designation {
+        position: static !important;
+    }
+    .experiene-box {
+        margin-left: 0px !important;
     }
 }
 @media only screen and (max-width: 540px){

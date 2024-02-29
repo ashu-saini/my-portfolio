@@ -22,7 +22,7 @@ const Section = (props) => {
   const classes = useStyles(makeStyles)
   return (
       <Paper className={`${props.className} ${classes.section}`}>
-        <Typography variant="h4" className={classes.title} >{props.title}</Typography>
+        <Typography variant="h3" className={classes.title} >{props.title}</Typography>
         {props.children}
       </Paper>
   )
