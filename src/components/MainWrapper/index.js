@@ -10,7 +10,7 @@ import Contact  from 'components/MainWrapper/Contact'
 const useStyles = makeStyles((theme) => ({
   container: {
     width: '100%',
-    paddingTop: '60px',
+    paddingTop: '0px',
     paddingBottom: '60px',
     display: 'flex',
     flexDirection: 'column',
