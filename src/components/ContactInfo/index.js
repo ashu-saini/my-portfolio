@@ -1,4 +1,4 @@
-import { List, ListItem, Link, Box } from "@mui/material"
+import { List, ListItem, Link, Box, Typography } from "@mui/material"
 import React from "react"
 import { contacts } from "./constant"
 import EmailIcon from '@mui/icons-material/Email';
@@ -12,15 +12,15 @@ const ContactInfo = () => {
       <List className="contact-links">
         <ListItem className="link-gap">
         <EmailIcon color="primary"/>
-          <Link href="#">{contacts.email}</Link>
+          <Link href="#" className="link-style">{contacts.email}</Link>
         </ListItem>
         <ListItem className="link-gap">
         <SmartphoneIcon color="primary"/>
-          <Link href="#">{contacts.phone}</Link>
+          <Link href="#" className="link-style">{contacts.phone}</Link>
         </ListItem>
         <ListItem className="link-gap">
         <LanguageIcon color="primary"/>
-          <Link href="#">{contacts.website}</Link>
+          <Link href="#" className="link-style">{contacts.website}</Link>
         </ListItem>
       </List>
     </Box>

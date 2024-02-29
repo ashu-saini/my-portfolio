@@ -10,13 +10,13 @@
 .intro__text {
     display: flex;
     &--wrapper {
-        max-width: 656px !important;
+        max-width: 670px !important;
 
     }
     &--btn {
         margin-left: auto !important;
         width: 30%;
-        height: 50px;
+        height: auto;
         align-self: flex-end;
     }
 }
@@ -49,3 +49,4 @@
     font-size: 1.4rem !important;
 }
 }
+
