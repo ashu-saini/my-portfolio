@@ -20,7 +20,8 @@ const Skills = () => {
               <List className="skills__items">
                 {skill.key.map((key) => (
                   <ListItem>
-                    {key}
+                    <img src={key?.image} className="skills__image"></img>
+                    {key?.languague}
                   </ListItem>
                 ))}
               </List>
