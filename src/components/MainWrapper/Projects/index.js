@@ -1,29 +1,37 @@
 import React from "react"
 import Section from "components/MainWrapper/Section"
 import { projects } from './constant'
-import { Box, Typography } from "@mui/material"
+import { Box, List, ListItem, Typography, Button } from "@mui/material"
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './project.scss'
+
 const Projects = () => {
   return (
-      <Section className="projects" title="Projects">
-        <Box>
-          {projects.map( (project, index) => (
-            <Box>
-              <Typography className="project--title" variant="h1">{project.title}</Typography>
-              <Box className='project-details'>
+    <Section className="projects" title="Projects">
+      <Box className="projects__container">
+        {projects.map((project, index) => (
+          <Box className="projects__cards">
+            <Box className='project-details'>
+            <Typography className="project--title" variant="h3">{project.title}</Typography>
               <Typography variant="p">{project.desc}</Typography>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">View on Github</a>
-              <Box>
+              <List className="tech__container">
                 {project.key.map((key) => (
-                  <Typography>{key}</Typography>
+                  <ListItem className="tech__items">
+                    <Typography variant="span" className="tech-badge">{key}</Typography>
+                    </ListItem>
                 ))}
-              </Box>
-
-              </Box>
+              </List>
             </Box>
-          ))}
-        </Box>
-      </Section>
+            <Box className="button__wrap">
+            <Button href={project.url} target="_blank"  rel={'external'} variant="contained" color="primary" className="view__icon">
+              <Typography variant="span">View on Github</Typography>
+              <KeyboardArrowRightIcon></KeyboardArrowRightIcon>
+              </Button>
+            </Box>
+          </Box>
+        ))}
+      </Box>
+    </Section>
   )
 }
 

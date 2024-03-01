@@ -18,7 +18,7 @@ function Intro() {
         </Typography>
         </Box>
         <Button color="primary" variant="contained" className="intro__text--btn" >
-        <Typography variant="h6"> Download Resume</Typography>
+        <Typography variant="span"> Download Resume</Typography>
         <DownloadIcon></DownloadIcon>
         </Button>
       </Box>

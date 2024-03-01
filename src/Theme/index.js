@@ -4,7 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline"
 
 let Theme = createTheme({
   typography: {
-    fontSize: 14,
+    fontSize: 13,
     fontFamily: 'Poppins, sans-serif',
     fontWeightLight: 400,
     fontWeightRegular: 500,
@@ -22,6 +22,24 @@ let Theme = createTheme({
     },
     primary: {
       main: '#5D5CCB', // Set your desired primary color here
+    },
+    secondary: {
+      main: '#F1E7E6', // Set your desired primary color here
+    },
+  },
+
+  components: {
+    MuiLink: {
+      defaultProps: {
+        underline: "hover",
+      },
+      styleOverrides: {
+        underlineHover: {
+          "&:hover": {
+            textDecorationColor: "red",
+          },
+        },
+      },
     },
   },
 })

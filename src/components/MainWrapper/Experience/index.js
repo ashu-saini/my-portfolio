@@ -13,21 +13,21 @@ const Experiences = () => {
           {experiences.map( (experience) => (
             <Box className="item">
               <Box className="info">
-              <Typography variant="h3" className="company--name">{experience.companyName}</Typography>
+              <Typography variant="h4" className="company--name">{experience.companyName}</Typography>
               <Box className="place">
-                <LocationOnIcon></LocationOnIcon>
+                <LocationOnIcon color="primary"></LocationOnIcon>
                 {experience.location}
               </Box>
               </Box>
               <Box className="designation">
                 <Box>{experience.designation}</Box>
                 <Box className="duration-wrapper">
-                  <CalendarMonthIcon></CalendarMonthIcon>
+                  <CalendarMonthIcon color="primary"></CalendarMonthIcon>
                   {experience.duration}
                 </Box>
               </Box>
               <Box>
-              <Typography variant="p">{experience.jobDesc}</Typography>
+              <Typography>{experience.jobDesc}</Typography>
               </Box>
             </Box>
           ))}

@@ -1,6 +1,6 @@
 
   .section-wrapper {
-    padding: 45px;
+    padding: 30px;
     border-radius: 2px;
     background-clip: padding-box;
     width: 80%;
@@ -8,5 +8,11 @@
         margin-bottom: 45px !important;
         text-align: center;
         font-weight: 600 !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-wrapper {
+      padding: 20px;
     }
   }
