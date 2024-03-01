@@ -1,0 +1,123 @@
+.experiene-box {
+    border-left: 3px solid #5D5CCB;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+
+    .item {
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .item::before {
+        content: "";
+        position: absolute;
+        left: -43px;
+        top: 0;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background: #fff;
+        border: 3px solid #5D5CCB;
+    }
+
+    .item::after {
+        content: "";
+        position: absolute;
+        left: -37px;
+        top: 6px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background: #5D5CCB;
+        z-index: 10;
+    }
+
+    .designation {
+        position: absolute;
+        left: -280px;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin-top: 0;
+        margin-bottom: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .place {
+        position: absolute;
+        right: 0;
+        top: 2px; 
+        display: flex;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .duration-wrapper {
+        display: flex;
+        gap: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [751px -> 1200px]*/
+    .experiene-box {
+        margin-left: 180px;
+    }
+    .designation {left: -200px !important;}
+}
+@media only screen and (max-width: 750px){
+	/*Big smartphones [426px -> 750px]*/
+    .experiene-box {
+        margin-left: 140px;
+    }
+    // .designation {left: -200px !important;}
+    .place {
+        position: static !important;
+    }
+    .designation {
+        position: static !important;
+    }
+    .experiene-box {
+        margin-left: 0px !important;
+    }
+}
+@media only screen and (max-width: 540px){
+	/*Big smartphones [426px -> 750px]*/
+    .company--name {
+        font-size: 28px !important;
+    }
+    .designation {
+        font-size: 14px !important;
+        left: -158px !important;
+    }
+    .experiene-box {
+        margin-left: 90px;
+    }
+    .place {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+	/*Small smartphones [350px]*/
+    .info{
+        display: block !important;
+    }
+}
