@@ -1,6 +1,6 @@
 export const info = {
-  title: "Interested in hiring me for your project?",
-  email: 'example@gmail.com',
-  phone: '+123456789',
+  title: "",
+  email: 'ashusaini542@gmail.com',
+  phone: '+917836045022',
   alt: 'Example'
 }

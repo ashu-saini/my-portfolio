@@ -4,6 +4,24 @@ import CssBaseline from "@mui/material/CssBaseline"
 
 let Theme = createTheme({
   typography: {
+    h1: {
+      fontSize: '4rem',
+    },
+    h3: {
+      fontSize: '2.5rem',
+    },
+    h4: {
+      fontSize: '2rem',
+    },
+    h5: {
+      fontSize: '1.25rem',
+    },
+    h6: {
+      fontSize: '0.875rem',
+    },
+    body1: {
+      fontSize: '0.875rem',
+    },
     fontSize: 13,
     fontFamily: 'Poppins, sans-serif',
     fontWeightLight: 400,
@@ -15,10 +33,10 @@ let Theme = createTheme({
     type : 'dark',
     background: {
       default: "#191628",
-      paper: "#211D34",
+      paper: "#191628",
     },
     text:{
-      primary: "#F1E7E6"
+      primary: "#dddddd"
     },
     primary: {
       main: '#5D5CCB', // Set your desired primary color here
@@ -34,6 +52,11 @@ let Theme = createTheme({
         underline: "hover",
       },
       styleOverrides: {
+        root: {
+          '&:hover': {
+            color: '#F1E7E6',  // Change this to your desired hover color
+          },
+        },
         underlineHover: {
           "&:hover": {
             textDecorationColor: "red",

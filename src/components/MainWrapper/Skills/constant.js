@@ -50,4 +50,4 @@ export const skills = [
     }
 ]
 
-export const skillTitle = 'I have more than 8 years of experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use.'
+export const skillTitle = 'I have more than 6 years of experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use.'

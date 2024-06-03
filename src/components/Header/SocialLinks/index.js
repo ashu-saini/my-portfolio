@@ -13,18 +13,18 @@ const SocialLinks = () => {
   return (
     <List className="links-wrapper">
       <ListItem>
-        <Link href="#" color="primary">
+        <Link href="https://www.linkedin.com/in/ashu-kumar-saini-135579119/" target="_blank" color="primary">
           <Icon component={LinkedInIcon} />
         </Link>
       </ListItem>
       <ListItem>
-        <Link href="#" color="primary">
+        <Link href="https://github.com/ashu-saini" target="_blank" color="primary">
           <GitHubIcon/>
           {/* <Icon component={GitHubIcon} /> */}
         </Link>
       </ListItem>
       <ListItem>
-        <Link href="#" color="primary">
+        <Link href="skype:profile_name?live:ashusaini542" target="_blank" color="primary">
           <Icon component={SkypeIcon} />
         </Link>
       </ListItem>

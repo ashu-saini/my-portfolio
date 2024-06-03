@@ -12,7 +12,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Box className="projects__cards">
             <Box className='project-details'>
-            <Typography className="project--title" variant="h3">{project.title}</Typography>
+            <Typography className="project--title" variant="h4">{project.title}</Typography>
               <Typography variant="p">{project.desc}</Typography>
               <List className="tech__container">
                 {project.key.map((key) => (
@@ -24,7 +24,7 @@ const Projects = () => {
             </Box>
             <Box className="button__wrap">
             <Button href={project.url} target="_blank"  rel={'external'} variant="contained" color="primary" className="view__icon">
-              <Typography variant="span">View on Github</Typography>
+              <Typography variant="span">{project?.github ? 'View on Github' : 'Visit Website'}</Typography>
               <KeyboardArrowRightIcon></KeyboardArrowRightIcon>
               </Button>
             </Box>

@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "pretty-quick": "pretty-quick",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build --branch=gh-pages-new"
   },
   "eslintConfig": {
     "extends": "react-app"

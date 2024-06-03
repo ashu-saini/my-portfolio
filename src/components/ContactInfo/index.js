@@ -12,15 +12,15 @@ const ContactInfo = () => {
       <List className="contact-links">
         <ListItem className="link-gap">
         <EmailIcon color="primary"/>
-          <Link href="#" underline="none">{contacts.email}</Link>
+          <Link href={`mailto:${contacts.email}`} underline="none">{contacts.email}</Link>
         </ListItem>
         <ListItem className="link-gap">
         <SmartphoneIcon color="primary"/>
-          <Link href="#" underline="none">{contacts.phone}</Link>
+          <Link href={`tel:${contacts.phone}`} underline="none">{contacts.phone}</Link>
         </ListItem>
         <ListItem className="link-gap">
         <LanguageIcon color="primary"/>
-          <Link href="#" underline="none">{contacts.website}</Link>
+          <Link href="https://ashu-saini.github.io/my-portfolio" target="_blank" underline="none">{contacts.website}</Link>
         </ListItem>
       </List>
     </Box>
